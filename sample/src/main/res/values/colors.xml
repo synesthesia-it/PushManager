@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="colorPrimary">@color/synesthesia</color>
+    <color name="colorPrimaryDark">@color/synesthesia_dark</color>
+    <color name="colorAccent">@color/pink</color>
+    <color name="colorBackground">@color/white</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="pink">#E91E63</color>
+    <color name="synesthesia">#2080bc</color>
+    <color name="synesthesia_dark">#175e8a</color>
+
+</resources>

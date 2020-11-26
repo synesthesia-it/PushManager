@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android-extensions'
+apply from: './dependencies.gradle'
+//apply plugin: 'com.google.gms.google-services'
+//apply plugin: 'com.huawei.agconnect'
+
+dependencies {
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+}
+
+
+android {
+    compileSdkVersion versions.compileSdk
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
+    }
+
+    defaultConfig {
+        applicationId project.APPLICATION_ID
+        targetSdkVersion versions.compileSdk
+        minSdkVersion versions.minSdk
+        versionCode Integer.parseInt(project.VERSION_CODE)
+        versionName project.VERSION_NAME
+
+        multiDexEnabled true
+        testApplicationId "it.android.app.test"
+
+    }
+
+
+    packagingOptions {
+        exclude 'META-INF/domain.kotlin_module'
+    }
+
+    buildTypes {
+
+        debug {
+            minifyEnabled false
+        }
+
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+        }
+    }
+}
+

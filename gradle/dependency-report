@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+##############################################################################
+##
+##  Generate a dependency update report
+##
+##############################################################################
+
+./gradlew dependencyUpdates -Drevision=release -DoutputDir=./gradle

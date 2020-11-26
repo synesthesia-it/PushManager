@@ -1,0 +1,14 @@
+dependencies {
+
+    implementation project(':push-manager')
+
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$versions.kotlin"
+
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.7'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.7'
+
+    implementation "androidx.activity:activity-ktx:1.1.0"
+    implementation "androidx.appcompat:appcompat:1.2.0"
+
+}
