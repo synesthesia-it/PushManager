@@ -1,0 +1,50 @@
+# built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated files
+bin/
+gen/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Eclipse project files
+.classpath
+.project
+
+# Windows thumbnail db
+Thumbs.db
+
+# OSX files
+.DS_Store
+
+# Old-style IDEA project files
+*.ipr
+*.iws
+
+# Sandbox stuff
+_sandbox
+
+# Gradle cache
+.gradle
+
+# Android Studio
+*.iml
+build
+/captures
+.externalNativeBuild
+
+# remove # and deleteClicked .idea if it better suit your needs.
+.idea/*
+!.idea/runConfigurations
+gradle/report.txt
+proguard-config.txt
+
+.murray/
