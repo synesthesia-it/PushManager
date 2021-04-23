@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme">
 	
 		<activity
-			android:name="com.android.app.com.synesthesia.app.view.PushTokenActivity"
+			android:name="com.synesthesia.pushmanager.sample.view.PushTokenActivity"
 			android:theme="@style/AppTheme.NoAnimation" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
