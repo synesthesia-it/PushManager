@@ -25,12 +25,12 @@ apply plugin: 'com.huawei.agconnect'
 
 6.  In the build.gradle of your app, inside *buildscript* -> *repositories*, add
 ```groovy
-maven { url "https://dl.bintray.com/synesthesiait/public" }
+maven { url 'https://jitpack.io' }
 ```
 
 6. Add the dependecy of the latest version of Handroix push notification library.
 ```groovy
-implementation "it.synesthesia:push-manager:2.0.0"
+implementation 'com.github.synesthesia-it:PushManager:[VERSION]'
 ```
 
 
